@@ -12,5 +12,13 @@
         "deepak barwal",
         "deepak",
         "barwal"
-    ]
+    ],
+    "license": "MIT",
+    "main": "index.js",
+    "repository": "DeepakBarwal/barwal",
+    "author": {
+        "name": "Deepak Barwal",
+        "email": "deepakbarwal98@gmail.com",
+        "url": "https://twitter.com/__aizen_sama"
+    }
 }
