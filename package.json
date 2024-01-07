@@ -1,6 +1,6 @@
 {
     "name": "barwal",
-    "version": "1.2.1",
+    "version": "1.2.2",
     "description": "Get to know Deepak Barwal via `npx barwal`.",
     "bin": {
         "barwal": "index.js"
