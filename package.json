@@ -1,7 +1,11 @@
 {
     "name": "barwal",
     "version": "1.1.0",
+    "description": "Get to know Deepak Barwal via `npx barwal`.",
     "bin": {
         "barwal": "index.js"
+    },
+    "dependencies": {
+        "cli-welcome": "^2.2.2"
     }
 }

@@ -1,6 +1,18 @@
 #!/usr/bin/env node
+const pkgJSON = require('./package.json')
+const welcome = require('cli-welcome')
 
-process.stdout.write(process.platform === 'win32' ? '\x1B[2J\x1B[0f' : '\x1B[2J\x1B[3J\x1B[H')
+welcome({
+    title: pkgJSON.name,
+    tagLine: pkgJSON.description,
+    description: `Namaste, nice to meet you!`,
+    version: pkgJSON.version,
+    bgColor: `#FADC00`,
+    color: `#000000`,
+    bold: true,
+    clear: true
+})
+
 console.log(`
 Deepak Barwal
 
