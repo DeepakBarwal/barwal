@@ -1,26 +1,29 @@
 #!/usr/bin/env node
 const pkgJSON = require('./package.json')
 const welcome = require('cli-welcome')
+const chalk = require('chalk')
+const log = console.log
+const dim = chalk.dim
+const italic = chalk.italic
+const twitterClr = chalk.hex(`#1da1f2`).bold.inverse
+const githubClr = chalk.hex(`#6cc644`).bold.inverse
+const linkedinClr = chalk.hex(`#d580ff`).bold.inverse
 
 welcome({
-    title: pkgJSON.name,
-    tagLine: pkgJSON.description,
-    description: `Namaste, nice to meet you!`,
+    title: `Deepak Barwal`,
+    tagLine: `Namaste, nice to meet you!`,
+    description: pkgJSON.description,
     version: pkgJSON.version,
-    bgColor: `#FADC00`,
+    bgColor: `#d580ff`,
     color: `#000000`,
     bold: true,
     clear: true
 })
 
-console.log(`
-Deepak Barwal
+log(`${italic(`A passionate CS Engineer from India.
+Interested in FullStack Development and System Design.`)}
 
-A passionate CS Engineer from India.
-Interested in FullStack Development and System Design.
-
-🐧 Twitter: https://twitter.com/__aizen_sama
-📖 Github: https://github.com/DeepakBarwal
-😎 LinkedIn: https://www.linkedin.com/in/d-barwal/
-
+${twitterClr(` Twitter `)} ${dim(`https://twitter.com/__aizen_sama`)}
+${githubClr(` GitHub `)} ${dim(`https://github.com/DeepakBarwal`)}
+${linkedinClr(` LinkedIn `)} ${dim(`https://www.linkedin.com/in/d-barwal`)}
 `)
